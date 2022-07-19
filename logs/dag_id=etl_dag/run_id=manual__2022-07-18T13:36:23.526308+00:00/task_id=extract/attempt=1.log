@@ -1,0 +1,24 @@
+[2022-07-18 13:36:25,053] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_dag.extract manual__2022-07-18T13:36:23.526308+00:00 [queued]>
+[2022-07-18 13:36:25,066] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_dag.extract manual__2022-07-18T13:36:23.526308+00:00 [queued]>
+[2022-07-18 13:36:25,066] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-18 13:36:25,067] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-07-18 13:36:25,067] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-18 13:36:25,089] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): extract> on 2022-07-18 13:36:23.526308+00:00
+[2022-07-18 13:36:25,095] {standard_task_runner.py:52} INFO - Started process 2140 to run task
+[2022-07-18 13:36:25,099] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'extract', 'manual__2022-07-18T13:36:23.526308+00:00', '--job-id', '19', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpby8prgjv', '--error-file', '/tmp/tmp50zgag1t']
+[2022-07-18 13:36:25,101] {standard_task_runner.py:80} INFO - Job 19: Subtask extract
+[2022-07-18 13:36:25,197] {task_command.py:371} INFO - Running <TaskInstance: etl_dag.extract manual__2022-07-18T13:36:23.526308+00:00 [running]> on host 70b17816bd7e
+[2022-07-18 13:36:25,310] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_dag
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-18T13:36:23.526308+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-18T13:36:23.526308+00:00
+[2022-07-18 13:36:25,311] {logging_mixin.py:115} INFO - extracting
+[2022-07-18 13:36:26,092] {python.py:173} INFO - Done. Returned value was: {'song_name': ['Avareh', 'Arezou', 'Tabiat', 'Setareh', 'Tasavor Kon', 'Daryaye Maghreb', 'Parandeh', 'Yadegari'], 'artist_name': ['Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi'], 'played_at': ['2022-07-18T05:48:12.234Z', '2022-07-17T20:44:56.091Z', '2022-07-17T20:41:01.954Z', '2022-07-17T20:37:43.707Z', '2022-07-17T20:34:02.940Z', '2022-07-17T20:29:53.538Z', '2022-07-17T20:25:50.882Z', '2022-07-17T20:22:27.220Z'], 'timestamp': ['2022-07-18', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17']}
+[2022-07-18 13:36:26,195] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=extract, execution_date=20220718T133623, start_date=20220718T133625, end_date=20220718T133626
+[2022-07-18 13:36:26,273] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-18 13:36:26,326] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

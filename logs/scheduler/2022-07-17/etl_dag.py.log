@@ -1,0 +1,966 @@
+[2022-07-17 19:36:51,080] {processor.py:153} INFO - Started process (PID=47) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:36:51,080] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:36:51,081] {logging_mixin.py:115} INFO - [2022-07-17 19:36:51,081] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:36:53,705] {logging_mixin.py:115} INFO - [2022-07-17 19:36:53,704] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:36:53,706] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:36:53,726] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 2.651 seconds
+[2022-07-17 19:37:24,259] {processor.py:153} INFO - Started process (PID=111) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:37:24,260] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:37:24,261] {logging_mixin.py:115} INFO - [2022-07-17 19:37:24,261] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:37:25,513] {logging_mixin.py:115} INFO - [2022-07-17 19:37:25,511] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:37:25,514] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:37:25,535] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.284 seconds
+[2022-07-17 19:37:55,590] {processor.py:153} INFO - Started process (PID=177) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:37:55,591] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:37:55,592] {logging_mixin.py:115} INFO - [2022-07-17 19:37:55,592] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:37:56,826] {logging_mixin.py:115} INFO - [2022-07-17 19:37:56,824] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:37:56,826] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:37:56,845] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.262 seconds
+[2022-07-17 19:38:26,892] {processor.py:153} INFO - Started process (PID=250) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:38:26,892] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:38:26,893] {logging_mixin.py:115} INFO - [2022-07-17 19:38:26,893] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:38:28,043] {logging_mixin.py:115} INFO - [2022-07-17 19:38:28,042] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:38:28,044] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:38:28,070] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.183 seconds
+[2022-07-17 19:38:58,164] {processor.py:153} INFO - Started process (PID=314) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:38:58,164] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:38:58,165] {logging_mixin.py:115} INFO - [2022-07-17 19:38:58,165] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:38:59,697] {logging_mixin.py:115} INFO - [2022-07-17 19:38:59,695] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:38:59,697] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:38:59,747] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.588 seconds
+[2022-07-17 19:39:30,745] {processor.py:153} INFO - Started process (PID=383) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:39:30,746] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:39:30,747] {logging_mixin.py:115} INFO - [2022-07-17 19:39:30,746] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:39:32,098] {logging_mixin.py:115} INFO - [2022-07-17 19:39:32,096] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:39:32,098] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:39:32,118] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.376 seconds
+[2022-07-17 19:40:02,362] {processor.py:153} INFO - Started process (PID=449) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:40:02,362] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:40:02,363] {logging_mixin.py:115} INFO - [2022-07-17 19:40:02,363] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:40:03,701] {logging_mixin.py:115} INFO - [2022-07-17 19:40:03,700] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:40:03,701] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:40:03,724] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.367 seconds
+[2022-07-17 19:40:34,474] {processor.py:153} INFO - Started process (PID=513) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:40:34,475] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:40:34,475] {logging_mixin.py:115} INFO - [2022-07-17 19:40:34,475] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:40:35,515] {logging_mixin.py:115} INFO - [2022-07-17 19:40:35,512] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:40:35,516] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:40:35,538] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.066 seconds
+[2022-07-17 19:41:05,709] {processor.py:153} INFO - Started process (PID=568) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:41:05,710] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:41:05,710] {logging_mixin.py:115} INFO - [2022-07-17 19:41:05,710] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:41:06,752] {logging_mixin.py:115} INFO - [2022-07-17 19:41:06,744] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:41:06,754] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:41:06,792] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.086 seconds
+[2022-07-17 19:41:36,934] {processor.py:153} INFO - Started process (PID=635) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:41:36,935] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:41:36,936] {logging_mixin.py:115} INFO - [2022-07-17 19:41:36,936] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:41:38,205] {logging_mixin.py:115} INFO - [2022-07-17 19:41:38,203] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:41:38,205] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:41:38,226] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.304 seconds
+[2022-07-17 19:42:09,041] {processor.py:153} INFO - Started process (PID=698) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:42:09,042] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:42:09,043] {logging_mixin.py:115} INFO - [2022-07-17 19:42:09,042] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:42:10,289] {logging_mixin.py:115} INFO - [2022-07-17 19:42:10,286] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:42:10,290] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:42:10,316] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.278 seconds
+[2022-07-17 19:42:40,633] {processor.py:153} INFO - Started process (PID=754) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:42:40,635] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:42:40,636] {logging_mixin.py:115} INFO - [2022-07-17 19:42:40,636] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:42:41,830] {logging_mixin.py:115} INFO - [2022-07-17 19:42:41,828] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:42:41,830] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:42:41,857] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.231 seconds
+[2022-07-17 19:43:12,636] {processor.py:153} INFO - Started process (PID=817) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:43:12,637] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:43:12,638] {logging_mixin.py:115} INFO - [2022-07-17 19:43:12,637] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:43:13,795] {logging_mixin.py:115} INFO - [2022-07-17 19:43:13,792] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 70, in extract
+    for song in data["items"]:
+KeyError: 'items'
+[2022-07-17 19:43:13,796] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:43:13,866] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.235 seconds
+[2022-07-17 19:43:44,379] {processor.py:153} INFO - Started process (PID=881) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:43:44,379] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:43:44,380] {logging_mixin.py:115} INFO - [2022-07-17 19:43:44,379] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:43:45,485] {logging_mixin.py:115} INFO - [2022-07-17 19:43:45,480] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:43:45,486] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:43:45,518] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.142 seconds
+[2022-07-17 19:44:16,469] {processor.py:153} INFO - Started process (PID=936) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:44:16,470] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:44:16,471] {logging_mixin.py:115} INFO - [2022-07-17 19:44:16,470] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:44:17,504] {logging_mixin.py:115} INFO - [2022-07-17 19:44:17,502] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:44:17,504] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:44:17,531] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.065 seconds
+[2022-07-17 19:44:48,428] {processor.py:153} INFO - Started process (PID=1000) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:44:48,430] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:44:48,432] {logging_mixin.py:115} INFO - [2022-07-17 19:44:48,432] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:44:49,580] {logging_mixin.py:115} INFO - [2022-07-17 19:44:49,575] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 972, in json
+    return complexjson.loads(self.text, **kwargs)
+  File "/usr/local/lib/python3.7/json/__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "/usr/local/lib/python3.7/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/local/lib/python3.7/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 62, in extract
+    data = r.json()
+  File "/home/airflow/.local/lib/python3.7/site-packages/requests/models.py", line 976, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 2 column 1 (char 1)
+[2022-07-17 19:44:49,581] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:44:49,638] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.221 seconds
+[2022-07-17 19:45:19,763] {processor.py:153} INFO - Started process (PID=1064) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:45:19,765] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:45:19,766] {logging_mixin.py:115} INFO - [2022-07-17 19:45:19,766] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:45:21,127] {logging_mixin.py:115} INFO - [2022-07-17 19:45:21,124] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 70, in extract
+    for song in data["items"]:
+KeyError: 'items'
+[2022-07-17 19:45:21,128] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:45:21,183] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.429 seconds
+[2022-07-17 19:45:51,913] {processor.py:153} INFO - Started process (PID=1125) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:45:51,914] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:45:51,914] {logging_mixin.py:115} INFO - [2022-07-17 19:45:51,914] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:45:53,173] {logging_mixin.py:115} INFO - [2022-07-17 19:45:53,172] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 70, in extract
+    for song in data["items"]:
+KeyError: 'items'
+[2022-07-17 19:45:53,173] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:45:53,204] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.294 seconds
+[2022-07-17 19:46:23,282] {processor.py:153} INFO - Started process (PID=1181) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:46:23,284] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:46:23,285] {logging_mixin.py:115} INFO - [2022-07-17 19:46:23,285] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:46:24,959] {logging_mixin.py:115} INFO - [2022-07-17 19:46:24,956] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 70, in extract
+    for song in data["items"]:
+KeyError: 'items'
+[2022-07-17 19:46:24,960] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:46:25,016] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.737 seconds
+[2022-07-17 19:46:55,529] {processor.py:153} INFO - Started process (PID=1246) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:46:55,530] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:46:55,532] {logging_mixin.py:115} INFO - [2022-07-17 19:46:55,532] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:46:57,740] {logging_mixin.py:115} INFO - [2022-07-17 19:46:57,738] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 70, in extract
+    for song in data["items"]:
+KeyError: 'items'
+[2022-07-17 19:46:57,740] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:46:57,769] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 2.251 seconds
+[2022-07-17 19:47:27,856] {processor.py:153} INFO - Started process (PID=1311) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:47:27,856] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:47:27,856] {logging_mixin.py:115} INFO - [2022-07-17 19:47:27,856] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:47:29,387] {logging_mixin.py:115} INFO - [2022-07-17 19:47:29,386] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 70, in extract
+    for song in data["items"]:
+KeyError: 'items'
+[2022-07-17 19:47:29,387] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:47:29,413] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.560 seconds
+[2022-07-17 19:48:00,019] {processor.py:153} INFO - Started process (PID=1367) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:48:00,020] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:48:00,020] {logging_mixin.py:115} INFO - [2022-07-17 19:48:00,020] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:48:01,269] {logging_mixin.py:115} INFO - [2022-07-17 19:48:01,266] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 109, in <module>
+    a=extract()
+  File "/opt/airflow/dags/etl_dag.py", line 70, in extract
+    for song in data["items"]:
+KeyError: 'items'
+[2022-07-17 19:48:01,270] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:48:01,304] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 1.290 seconds
+[2022-07-17 19:48:03,869] {processor.py:153} INFO - Started process (PID=1388) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:48:03,870] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:48:03,871] {logging_mixin.py:115} INFO - [2022-07-17 19:48:03,870] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:48:04,289] {logging_mixin.py:115} INFO - [2022-07-17 19:48:04,287] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:48:04,289] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:48:04,312] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.447 seconds
+[2022-07-17 19:48:35,206] {processor.py:153} INFO - Started process (PID=1443) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:48:35,207] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:48:35,209] {logging_mixin.py:115} INFO - [2022-07-17 19:48:35,208] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:48:35,613] {logging_mixin.py:115} INFO - [2022-07-17 19:48:35,612] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:48:35,613] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:48:35,633] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.440 seconds
+[2022-07-17 19:49:06,385] {processor.py:153} INFO - Started process (PID=1508) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:49:06,386] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:49:06,387] {logging_mixin.py:115} INFO - [2022-07-17 19:49:06,386] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:49:06,887] {logging_mixin.py:115} INFO - [2022-07-17 19:49:06,886] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:49:06,887] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:49:06,908] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.529 seconds
+[2022-07-17 19:49:37,053] {processor.py:153} INFO - Started process (PID=1566) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:49:37,054] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:49:37,055] {logging_mixin.py:115} INFO - [2022-07-17 19:49:37,055] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:49:37,528] {logging_mixin.py:115} INFO - [2022-07-17 19:49:37,527] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:49:37,529] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:49:37,551] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.504 seconds
+[2022-07-17 19:50:07,617] {processor.py:153} INFO - Started process (PID=1632) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:50:07,617] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:50:07,618] {logging_mixin.py:115} INFO - [2022-07-17 19:50:07,618] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:50:07,980] {logging_mixin.py:115} INFO - [2022-07-17 19:50:07,979] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:50:07,981] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:50:08,001] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.387 seconds
+[2022-07-17 19:50:17,847] {processor.py:153} INFO - Started process (PID=1663) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:50:17,848] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:50:17,849] {logging_mixin.py:115} INFO - [2022-07-17 19:50:17,848] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:50:18,172] {logging_mixin.py:115} INFO - [2022-07-17 19:50:18,171] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 112, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:50:18,172] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:50:18,190] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.346 seconds
+[2022-07-17 19:50:48,357] {processor.py:153} INFO - Started process (PID=1719) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:50:48,358] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:50:48,360] {logging_mixin.py:115} INFO - [2022-07-17 19:50:48,360] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:50:48,709] {logging_mixin.py:115} INFO - [2022-07-17 19:50:48,708] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 112, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:50:48,709] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:50:48,728] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.378 seconds
+[2022-07-17 19:51:05,909] {processor.py:153} INFO - Started process (PID=1747) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:51:05,910] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:51:05,910] {logging_mixin.py:115} INFO - [2022-07-17 19:51:05,910] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:51:06,292] {logging_mixin.py:115} INFO - [2022-07-17 19:51:06,290] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 113, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:51:06,293] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:51:06,321] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.415 seconds
+[2022-07-17 19:51:37,300] {processor.py:153} INFO - Started process (PID=1813) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:51:37,301] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:51:37,301] {logging_mixin.py:115} INFO - [2022-07-17 19:51:37,301] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:51:37,724] {logging_mixin.py:115} INFO - [2022-07-17 19:51:37,722] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 113, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:51:37,724] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:51:37,755] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.458 seconds
+[2022-07-17 19:52:08,604] {processor.py:153} INFO - Started process (PID=1868) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:52:08,606] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:52:08,608] {logging_mixin.py:115} INFO - [2022-07-17 19:52:08,608] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:52:09,051] {logging_mixin.py:115} INFO - [2022-07-17 19:52:09,050] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 113, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:52:09,052] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:52:09,073] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.483 seconds
+[2022-07-17 19:52:16,384] {processor.py:153} INFO - Started process (PID=1904) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:52:16,385] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:52:16,385] {logging_mixin.py:115} INFO - [2022-07-17 19:52:16,385] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:52:16,788] {logging_mixin.py:115} INFO - [2022-07-17 19:52:16,786] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 113, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:52:16,788] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:52:16,807] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.426 seconds
+[2022-07-17 19:52:47,656] {processor.py:153} INFO - Started process (PID=1967) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:52:47,657] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:52:47,657] {logging_mixin.py:115} INFO - [2022-07-17 19:52:47,657] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:52:48,008] {logging_mixin.py:115} INFO - [2022-07-17 19:52:48,006] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 113, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:52:48,008] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:52:48,032] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.379 seconds
+[2022-07-17 19:53:18,701] {processor.py:153} INFO - Started process (PID=2021) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:53:18,701] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:53:18,701] {logging_mixin.py:115} INFO - [2022-07-17 19:53:18,701] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:53:19,057] {logging_mixin.py:115} INFO - [2022-07-17 19:53:19,056] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:53:19,057] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:53:19,076] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.378 seconds
+[2022-07-17 19:53:49,901] {processor.py:153} INFO - Started process (PID=2086) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:53:49,901] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:53:49,902] {logging_mixin.py:115} INFO - [2022-07-17 19:53:49,902] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:53:50,211] {logging_mixin.py:115} INFO - [2022-07-17 19:53:50,210] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("my_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:53:50,212] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:53:50,231] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.333 seconds
+[2022-07-17 19:54:13,243] {processor.py:153} INFO - Started process (PID=2139) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:54:13,244] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:54:13,244] {logging_mixin.py:115} INFO - [2022-07-17 19:54:13,244] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:54:13,622] {logging_mixin.py:115} INFO - [2022-07-17 19:54:13,621] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("etl_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:54:13,622] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:54:13,642] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.402 seconds
+[2022-07-17 19:54:44,471] {processor.py:153} INFO - Started process (PID=2203) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:54:44,471] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:54:44,472] {logging_mixin.py:115} INFO - [2022-07-17 19:54:44,472] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:54:44,804] {logging_mixin.py:115} INFO - [2022-07-17 19:54:44,803] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("etl_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:54:44,805] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:54:44,823] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.355 seconds
+[2022-07-17 19:55:15,611] {processor.py:153} INFO - Started process (PID=2258) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:55:15,612] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:55:15,612] {logging_mixin.py:115} INFO - [2022-07-17 19:55:15,612] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:55:15,962] {logging_mixin.py:115} INFO - [2022-07-17 19:55:15,961] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("etl_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:55:15,962] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:55:15,981] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.374 seconds
+[2022-07-17 19:55:26,055] {processor.py:153} INFO - Started process (PID=2271) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:55:26,056] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:55:26,056] {logging_mixin.py:115} INFO - [2022-07-17 19:55:26,056] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:55:26,538] {logging_mixin.py:115} INFO - [2022-07-17 19:55:26,536] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("etl_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:55:26,539] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:55:26,562] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.512 seconds
+[2022-07-17 19:55:57,315] {processor.py:153} INFO - Started process (PID=2335) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:55:57,316] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:55:57,316] {logging_mixin.py:115} INFO - [2022-07-17 19:55:57,316] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:55:57,718] {logging_mixin.py:115} INFO - [2022-07-17 19:55:57,717] {dagbag.py:321} ERROR - Failed to import: /opt/airflow/dags/etl_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 318, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/etl_dag.py", line 111, in <module>
+    with DAG("etl_dag",start_date=datetime(2022,1,1),
+TypeError: 'module' object is not callable
+[2022-07-17 19:55:57,718] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:55:57,740] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.428 seconds
+[2022-07-17 19:56:01,344] {processor.py:153} INFO - Started process (PID=2337) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:56:01,345] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:56:01,346] {logging_mixin.py:115} INFO - [2022-07-17 19:56:01,346] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:56:01,711] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:56:01,792] {logging_mixin.py:115} INFO - [2022-07-17 19:56:01,792] {manager.py:508} INFO - Created Permission View: can delete on DAG:etl_dag
+[2022-07-17 19:56:01,803] {logging_mixin.py:115} INFO - [2022-07-17 19:56:01,803] {manager.py:508} INFO - Created Permission View: can read on DAG:etl_dag
+[2022-07-17 19:56:01,811] {logging_mixin.py:115} INFO - [2022-07-17 19:56:01,811] {manager.py:508} INFO - Created Permission View: can edit on DAG:etl_dag
+[2022-07-17 19:56:01,812] {logging_mixin.py:115} INFO - [2022-07-17 19:56:01,811] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 19:56:01,821] {logging_mixin.py:115} INFO - [2022-07-17 19:56:01,821] {dag.py:2439} INFO - Creating ORM DAG for etl_dag
+[2022-07-17 19:56:01,837] {logging_mixin.py:115} INFO - [2022-07-17 19:56:01,837] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-16T00:00:00+00:00, run_after=2022-07-17T00:00:00+00:00
+[2022-07-17 19:56:01,854] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.514 seconds
+[2022-07-17 19:56:31,965] {processor.py:153} INFO - Started process (PID=2401) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:56:31,966] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:56:31,966] {logging_mixin.py:115} INFO - [2022-07-17 19:56:31,966] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:56:32,386] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:56:32,415] {logging_mixin.py:115} INFO - [2022-07-17 19:56:32,414] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 19:56:32,452] {logging_mixin.py:115} INFO - [2022-07-17 19:56:32,451] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 19:56:32,470] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.508 seconds
+[2022-07-17 19:57:03,325] {processor.py:153} INFO - Started process (PID=2456) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:57:03,326] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:57:03,326] {logging_mixin.py:115} INFO - [2022-07-17 19:57:03,326] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:57:03,645] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:57:03,669] {logging_mixin.py:115} INFO - [2022-07-17 19:57:03,668] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 19:57:03,694] {logging_mixin.py:115} INFO - [2022-07-17 19:57:03,693] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 19:57:03,705] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.382 seconds
+[2022-07-17 19:57:34,471] {processor.py:153} INFO - Started process (PID=2520) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:57:34,472] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:57:34,473] {logging_mixin.py:115} INFO - [2022-07-17 19:57:34,473] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:57:34,867] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:57:34,892] {logging_mixin.py:115} INFO - [2022-07-17 19:57:34,891] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 19:57:34,916] {logging_mixin.py:115} INFO - [2022-07-17 19:57:34,916] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 19:57:34,929] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.464 seconds
+[2022-07-17 19:58:05,690] {processor.py:153} INFO - Started process (PID=2584) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:58:05,690] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:58:05,691] {logging_mixin.py:115} INFO - [2022-07-17 19:58:05,691] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:58:06,251] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:58:06,284] {logging_mixin.py:115} INFO - [2022-07-17 19:58:06,283] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 19:58:06,317] {logging_mixin.py:115} INFO - [2022-07-17 19:58:06,316] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 19:58:06,333] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.646 seconds
+[2022-07-17 19:58:36,953] {processor.py:153} INFO - Started process (PID=2639) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:58:36,954] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:58:36,954] {logging_mixin.py:115} INFO - [2022-07-17 19:58:36,954] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:58:37,298] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:58:37,323] {logging_mixin.py:115} INFO - [2022-07-17 19:58:37,322] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 19:58:37,347] {logging_mixin.py:115} INFO - [2022-07-17 19:58:37,347] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 19:58:37,367] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.419 seconds
+[2022-07-17 19:59:08,044] {processor.py:153} INFO - Started process (PID=2703) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:59:08,045] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:59:08,045] {logging_mixin.py:115} INFO - [2022-07-17 19:59:08,045] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:59:08,364] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:59:08,394] {logging_mixin.py:115} INFO - [2022-07-17 19:59:08,393] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 19:59:08,430] {logging_mixin.py:115} INFO - [2022-07-17 19:59:08,430] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 19:59:08,445] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.404 seconds
+[2022-07-17 19:59:38,584] {processor.py:153} INFO - Started process (PID=2758) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:59:38,585] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 19:59:38,585] {logging_mixin.py:115} INFO - [2022-07-17 19:59:38,585] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:59:38,949] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 19:59:38,974] {logging_mixin.py:115} INFO - [2022-07-17 19:59:38,973] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 19:59:39,000] {logging_mixin.py:115} INFO - [2022-07-17 19:59:39,000] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 19:59:39,014] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.433 seconds
+[2022-07-17 20:00:09,799] {processor.py:153} INFO - Started process (PID=2825) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:00:09,801] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 20:00:09,802] {logging_mixin.py:115} INFO - [2022-07-17 20:00:09,802] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:00:10,162] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:00:10,186] {logging_mixin.py:115} INFO - [2022-07-17 20:00:10,185] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 20:00:10,214] {logging_mixin.py:115} INFO - [2022-07-17 20:00:10,214] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 20:00:10,227] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.437 seconds
+[2022-07-17 20:00:40,346] {processor.py:153} INFO - Started process (PID=2893) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:00:40,347] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 20:00:40,347] {logging_mixin.py:115} INFO - [2022-07-17 20:00:40,347] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:00:40,670] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:00:40,694] {logging_mixin.py:115} INFO - [2022-07-17 20:00:40,693] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 20:00:40,719] {logging_mixin.py:115} INFO - [2022-07-17 20:00:40,719] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 20:00:40,730] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.388 seconds
+[2022-07-17 20:01:11,564] {processor.py:153} INFO - Started process (PID=2948) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:01:11,565] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 20:01:11,566] {logging_mixin.py:115} INFO - [2022-07-17 20:01:11,566] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:01:11,905] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:01:11,929] {logging_mixin.py:115} INFO - [2022-07-17 20:01:11,928] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 20:01:11,953] {logging_mixin.py:115} INFO - [2022-07-17 20:01:11,952] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 20:01:11,964] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.410 seconds
+[2022-07-17 20:01:42,105] {processor.py:153} INFO - Started process (PID=3012) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:01:42,107] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 20:01:42,108] {logging_mixin.py:115} INFO - [2022-07-17 20:01:42,108] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:01:42,469] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:01:42,495] {logging_mixin.py:115} INFO - [2022-07-17 20:01:42,495] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 20:01:42,522] {logging_mixin.py:115} INFO - [2022-07-17 20:01:42,521] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 20:01:42,533] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.440 seconds
+[2022-07-17 20:02:12,604] {processor.py:153} INFO - Started process (PID=3080) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:02:12,604] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 20:02:12,605] {logging_mixin.py:115} INFO - [2022-07-17 20:02:12,605] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:02:13,044] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:02:13,090] {logging_mixin.py:115} INFO - [2022-07-17 20:02:13,089] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 20:02:13,133] {logging_mixin.py:115} INFO - [2022-07-17 20:02:13,133] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 20:02:13,150] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.550 seconds
+[2022-07-17 20:02:16,329] {processor.py:153} INFO - Started process (PID=3088) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:02:16,330] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 20:02:16,330] {logging_mixin.py:115} INFO - [2022-07-17 20:02:16,330] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:02:16,725] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:02:16,750] {logging_mixin.py:115} INFO - [2022-07-17 20:02:16,749] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 20:02:16,776] {logging_mixin.py:115} INFO - [2022-07-17 20:02:16,776] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 20:02:16,791] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.469 seconds
+[2022-07-17 20:02:46,854] {processor.py:153} INFO - Started process (PID=3146) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:02:46,854] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 20:02:46,855] {logging_mixin.py:115} INFO - [2022-07-17 20:02:46,855] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:02:47,248] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:02:47,276] {logging_mixin.py:115} INFO - [2022-07-17 20:02:47,275] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 20:02:47,318] {logging_mixin.py:115} INFO - [2022-07-17 20:02:47,317] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 20:02:47,334] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.483 seconds
+[2022-07-17 20:03:17,613] {processor.py:153} INFO - Started process (PID=3212) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:03:17,613] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 20:03:17,614] {logging_mixin.py:115} INFO - [2022-07-17 20:03:17,614] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:03:18,040] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:03:18,072] {logging_mixin.py:115} INFO - [2022-07-17 20:03:18,071] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 20:03:18,107] {logging_mixin.py:115} INFO - [2022-07-17 20:03:18,107] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 20:03:18,118] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.509 seconds
+[2022-07-17 20:03:48,284] {processor.py:153} INFO - Started process (PID=3280) to work on /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:03:48,284] {processor.py:641} INFO - Processing file /opt/airflow/dags/etl_dag.py for tasks to queue
+[2022-07-17 20:03:48,285] {logging_mixin.py:115} INFO - [2022-07-17 20:03:48,285] {dagbag.py:508} INFO - Filling up the DagBag from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:03:48,703] {processor.py:651} INFO - DAG(s) dict_keys(['etl_dag']) retrieved from /opt/airflow/dags/etl_dag.py
+[2022-07-17 20:03:48,727] {logging_mixin.py:115} INFO - [2022-07-17 20:03:48,727] {dag.py:2420} INFO - Sync 1 DAGs
+[2022-07-17 20:03:48,752] {logging_mixin.py:115} INFO - [2022-07-17 20:03:48,752] {dag.py:2972} INFO - Setting next_dagrun for etl_dag to 2022-07-17T00:00:00+00:00, run_after=2022-07-18T00:00:00+00:00
+[2022-07-17 20:03:48,764] {processor.py:161} INFO - Processing /opt/airflow/dags/etl_dag.py took 0.486 seconds

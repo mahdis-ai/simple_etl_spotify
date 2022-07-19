@@ -1,0 +1,25 @@
+[2022-07-18 13:50:25,717] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_dag.transform manual__2022-07-18T13:50:17.454943+00:00 [queued]>
+[2022-07-18 13:50:25,727] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_dag.transform manual__2022-07-18T13:50:17.454943+00:00 [queued]>
+[2022-07-18 13:50:25,728] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-18 13:50:25,728] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-07-18 13:50:25,728] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-18 13:50:25,744] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): transform> on 2022-07-18 13:50:17.454943+00:00
+[2022-07-18 13:50:25,750] {standard_task_runner.py:52} INFO - Started process 2799 to run task
+[2022-07-18 13:50:25,754] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'transform', 'manual__2022-07-18T13:50:17.454943+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmpl14xfc_5', '--error-file', '/tmp/tmpfqmot3hx']
+[2022-07-18 13:50:25,755] {standard_task_runner.py:80} INFO - Job 30: Subtask transform
+[2022-07-18 13:50:25,825] {task_command.py:371} INFO - Running <TaskInstance: etl_dag.transform manual__2022-07-18T13:50:17.454943+00:00 [running]> on host 70b17816bd7e
+[2022-07-18 13:50:25,913] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_dag
+AIRFLOW_CTX_TASK_ID=transform
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-18T13:50:17.454943+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-18T13:50:17.454943+00:00
+[2022-07-18 13:50:25,925] {logging_mixin.py:115} INFO - {'song_name': ['Avareh', 'Arezou', 'Tabiat', 'Setareh', 'Tasavor Kon', 'Daryaye Maghreb', 'Parandeh', 'Yadegari'], 'artist_name': ['Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi'], 'played_at': ['2022-07-18T05:48:12.234Z', '2022-07-17T20:44:56.091Z', '2022-07-17T20:41:01.954Z', '2022-07-17T20:37:43.707Z', '2022-07-17T20:34:02.940Z', '2022-07-17T20:29:53.538Z', '2022-07-17T20:25:50.882Z', '2022-07-17T20:22:27.220Z'], 'timestamp': ['2022-07-18', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17']}
+[2022-07-18 13:50:25,936] {logging_mixin.py:115} INFO - Data valid, proceed to Load stage
+[2022-07-18 13:50:25,937] {python.py:173} INFO - Done. Returned value was: {'song_name': ['Avareh', 'Arezou', 'Tabiat', 'Setareh', 'Tasavor Kon', 'Daryaye Maghreb', 'Parandeh', 'Yadegari'], 'artist_name': ['Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi', 'Siavash Ghomayshi'], 'played_at': ['2022-07-18T05:48:12.234Z', '2022-07-17T20:44:56.091Z', '2022-07-17T20:41:01.954Z', '2022-07-17T20:37:43.707Z', '2022-07-17T20:34:02.940Z', '2022-07-17T20:29:53.538Z', '2022-07-17T20:25:50.882Z', '2022-07-17T20:22:27.220Z'], 'timestamp': ['2022-07-18', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17', '2022-07-17']}
+[2022-07-18 13:50:25,967] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=transform, execution_date=20220718T135017, start_date=20220718T135025, end_date=20220718T135025
+[2022-07-18 13:50:26,005] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-18 13:50:26,055] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
