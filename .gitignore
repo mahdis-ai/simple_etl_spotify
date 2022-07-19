@@ -2,3 +2,5 @@ csv_data.csv
 Pipfile
 dags/my_dag.py
 Pipfile.lock
+dags/__pycache__
+.env
