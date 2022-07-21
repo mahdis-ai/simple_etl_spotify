@@ -13,7 +13,7 @@ import boto3
 import os
 
 
-USER_ID = "	" # your Spotify username 
+USER_ID = "" # your Spotify username 
 TOKEN = "" # your Spotify token
 def check_if_valid_data(df: pd.DataFrame) -> bool:
     # Check if dataframe is empty
@@ -96,8 +96,8 @@ def transform(ti):
     # Load
 
 def load(ti):
+    song_dict=ti.xcom_pull(task_ids=["transform"])[0]
     if song_dict is not None:
-        song_dict=ti.xcom_pull(task_ids=["transform"])[0]
         song_df = pd.DataFrame(song_dict, columns = ["song_name", "artist_name", "played_at", "timestamp"])
         BUCKET_NAME ='' #bucket name
    
@@ -109,7 +109,7 @@ def load(ti):
             aws_secret_access_key='',
         )
         s3=session.client("s3")
-        s3.upload_file(file_path,BUCKET_NAME, 'song_data.csv')
+        s3.upload_file(file_path,BUCKET_NAME, 'Mahdis/song_data.csv')
 
 
 

@@ -1,0 +1,24 @@
+[2022-07-21 06:28:34,939] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_dag.extract manual__2022-07-21T06:28:32.800540+00:00 [queued]>
+[2022-07-21 06:28:34,951] {taskinstance.py:1179} INFO - Dependencies all met for <TaskInstance: etl_dag.extract manual__2022-07-21T06:28:32.800540+00:00 [queued]>
+[2022-07-21 06:28:34,952] {taskinstance.py:1376} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-21 06:28:34,952] {taskinstance.py:1377} INFO - Starting attempt 1 of 1
+[2022-07-21 06:28:34,952] {taskinstance.py:1378} INFO - 
+--------------------------------------------------------------------------------
+[2022-07-21 06:28:34,972] {taskinstance.py:1397} INFO - Executing <Task(PythonOperator): extract> on 2022-07-21 06:28:32.800540+00:00
+[2022-07-21 06:28:34,979] {standard_task_runner.py:52} INFO - Started process 110 to run task
+[2022-07-21 06:28:34,982] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_dag', 'extract', 'manual__2022-07-21T06:28:32.800540+00:00', '--job-id', '66', '--raw', '--subdir', 'DAGS_FOLDER/etl_dag.py', '--cfg-path', '/tmp/tmph5yemjpz', '--error-file', '/tmp/tmpinrfk8or']
+[2022-07-21 06:28:34,983] {standard_task_runner.py:80} INFO - Job 66: Subtask extract
+[2022-07-21 06:28:35,062] {task_command.py:371} INFO - Running <TaskInstance: etl_dag.extract manual__2022-07-21T06:28:32.800540+00:00 [running]> on host 4514cd19035a
+[2022-07-21 06:28:35,154] {taskinstance.py:1591} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_dag
+AIRFLOW_CTX_TASK_ID=extract
+AIRFLOW_CTX_EXECUTION_DATE=2022-07-21T06:28:32.800540+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-07-21T06:28:32.800540+00:00
+[2022-07-21 06:28:35,156] {logging_mixin.py:115} INFO - extracting
+[2022-07-21 06:28:36,339] {python.py:173} INFO - Done. Returned value was: {'song_name': ['Miras'], 'artist_name': ['Siavash Ghomayshi'], 'played_at': ['2022-07-21T06:26:06.330Z'], 'timestamp': ['2022-07-21']}
+[2022-07-21 06:28:36,369] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=etl_dag, task_id=extract, execution_date=20220721T062832, start_date=20220721T062834, end_date=20220721T062836
+[2022-07-21 06:28:36,397] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-07-21 06:28:36,447] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
